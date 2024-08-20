@@ -4,53 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruthu's Professional Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+        .header {
+            background: #007BFF;
+            color: #fff;
             padding: 20px;
+            border-radius: 8px;
+            text-align: center;
         }
-        h1, h2, h3 {
-            color: #333;
+        .header h1 {
+            margin: 0;
         }
-        .header, .section {
+        .header .links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .header .links a:hover {
+            text-decoration: underline;
+        }
+        .section {
             background: #fff;
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .links a {
-            color: #007BFF;
-            text-decoration: none;
+        .section h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .skill {
-            background: #eee;
+        .skills .skill {
+            background: #e9ecef;
             border-radius: 5px;
-            padding: 5px 10px;
+            padding: 8px 15px;
+            font-size: 0.9em;
             margin: 5px;
+        }
+        @media (max-width: 768px) {
+            .skills .skill {
+                flex: 1 1 100%;
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
@@ -67,7 +68,7 @@
 
         <div class="section">
             <h2>Education</h2>
-            <ul>
+            <ul class="list-unstyled">
                 <li><strong>Master of Science in Computer Engineering</strong>, San José State University, GPA: 4.00/4.00
                     <br> Specialization in Data Science: Machine Learning, Data Mining, Data Analytics, Deep Learning
                     <br> Aug 2022 – May 2024
@@ -82,7 +83,7 @@
 
         <div class="section">
             <h2>Skills</h2>
-            <div class="skills">
+            <div class="d-flex flex-wrap">
                 <div class="skill">Python</div>
                 <div class="skill">Shell scripting</div>
                 <div class="skill">R</div>
@@ -126,7 +127,7 @@
 
         <div class="section">
             <h2>Experience</h2>
-            <ul>
+            <ul class="list-unstyled">
                 <li><strong>Controls Software Engineer</strong>, Trane Technologies, Jan 2024 – Present
                     <br> Developed and maintained high-performance software solutions for HVAC systems using C++ and control system algorithms.
                 </li>
@@ -147,7 +148,7 @@
 
         <div class="section">
             <h2>Academic Projects</h2>
-            <ul>
+            <ul class="list-unstyled">
                 <li><strong>Image and Video Super-Resolution in Real Time</strong>
                     <br> Led a research project on video super-resolution using ESPCNs and GANs, utilizing Adaptive bitrate algorithms.
                 </li>
@@ -162,5 +163,10 @@
             <p>Proposed a novel approach explaining the co-relation between ambient temperature and rainfall patterns using RNNs achieving an accuracy of 85%. Presented the paper, “An inch closer to understanding Bengaluru’s weather,” at the International Conference on Advances in Electrical and Computer Technologies.</p>
         </div>
     </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
