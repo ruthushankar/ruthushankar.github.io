@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,46 @@
         body {
             background-color: #f9f9f9;
         }
+
         .header {
-            background: #007BFF;
-            color: #fff;
-            padding: 20px;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #6a0572, #a4508b); /* Gradient background for a classy feel */
+            color: #fdfdfd; /* Soft white color for text */
+            padding: 25px; /* Increased padding for a more spacious look */
+            border-radius: 12px; /* Slightly larger border-radius for smoother corners */
             text-align: center;
+            font-family: 'Playfair Display', serif; /* Use a serif font for elegance */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            letter-spacing: 1px; /* Slightly increased letter spacing for text */
         }
+        
         .header h1 {
             margin: 0;
+            font-size: 2.5em; /* Larger font size for the title */
+            font-weight: 700; /* Bold font weight for emphasis */
+            text-transform: uppercase; /* Uppercase for a formal look */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
         }
+        
+        .header p {
+            margin: 10px 0 0;
+            font-size: 1.2em; /* Slightly larger font size for the location */
+            font-weight: 400; /* Regular font weight for contrast with the title */
+            color: #e0e0e0; /* Softer color for secondary text */
+        }
+        
         .header .links a {
-            color: #fff;
+            color: #fdfdfd; /* Keep the link color consistent with the header text */
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            font-weight: 500; /* Medium font weight for link text */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
         }
+        
         .header .links a:hover {
-            text-decoration: underline;
+            color: #f5a623; /* Change color on hover for an interactive feel */
+            text-decoration: underline; /* Underline on hover to highlight links */
         }
+        
         .section {
             background: #fff;
             padding: 20px;
@@ -36,10 +59,21 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .section h2 {
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif; /* Use a serif font for a classy look */
+            border-bottom: 2px solid;
+            border-image: linear-gradient(to right, #007BFF, #00C6FF); /* Gradient border */
+            border-image-slice: 1;
+            padding-bottom: 15px; /* Increased padding for more spacing */
+            margin-bottom: 25px; /* Increased margin for more whitespace */
+            color: #333; /* Darker color for a sophisticated look */
+            text-transform: uppercase; /* Makes the text uppercase for emphasis */
+            letter-spacing: 2px; /* Spacing between letters for elegance */
+            font-weight: bold; /* Bold font for strong emphasis */
+            text-align: left; /* Align the text to the left */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle depth effect */
         }
+        
+
         .skills .skill {
             background: #e9ecef;
             border-radius: 5px;
@@ -47,61 +81,79 @@
             font-size: 0.9em;
             margin: 5px;
         }
+
         @media (max-width: 768px) {
             .skills .skill {
                 flex: 1 1 100%;
                 margin: 5px 0;
             }
         }
+
         .section h2 {
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif; /* Use a serif font for a classy look */
+            border-bottom: 2px solid;
+            border-image: linear-gradient(to right, #007BFF, #00C6FF); /* Gradient border */
+            border-image-slice: 1;
+            padding-bottom: 15px; /* Increased padding for more spacing */
+            margin-bottom: 25px; /* Increased margin for more whitespace */
+            color: #333; /* Darker color for a sophisticated look */
+            text-transform: uppercase; /* Makes the text uppercase for emphasis */
+            letter-spacing: 2px; /* Spacing between letters for elegance */
+            font-weight: bold; /* Bold font for strong emphasis */
+            text-align: left; /* Align the text to the left */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle depth effect */
         }
         
-        .experience-entry {
+        .experience-entry,
+        .project-entry {
             margin-bottom: 20px;
             padding: 10px;
             transition: all 0.3s ease;
             border-radius: 5px;
         }
         
-        .experience-entry:hover {
+        .experience-entry:hover,
+        .project-entry:hover {
             background-color: #f0f8ff; /* Light background color on hover */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
             transform: scale(1.02); /* Slightly enlarges the entry on hover */
         }
         
-        .experience-entry h3 {
+        .experience-entry h3,
+        .project-entry h3 {
             font-size: 1.2em;
             font-weight: bold;
             margin-bottom: 5px;
         }
         
-        .experience-entry .date {
+        .experience-entry .date,
+        .project-entry .date {
             float: right;
             font-weight: bold;
             color: #555;
         }
         
-        .experience-entry ul {
+        .experience-entry ul,
+        .project-entry ul {
             margin-top: 10px;
             padding-left: 20px;
         }
         
-        .experience-entry ul li {
+        .experience-entry ul li,
+        .project-entry ul li {
             margin-bottom: 10px;
         }
         
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>Ruthu</h1>
             <p><strong>Location:</strong> San Jose, California</p>
             <p class="links">
-                <a href="https://www.linkedin.com/in/ruthushankar/" target="_blank">LinkedIn</a> | 
+                <a href="https://www.linkedin.com/in/ruthushankar/" target="_blank">LinkedIn</a> |
                 <a href="https://github.com/ruthushankar" target="_blank">GitHub</a>
             </p>
         </div>
@@ -109,114 +161,148 @@
         <div class="section">
             <h2>Education</h2>
             <ul class="list-unstyled">
-                <li><strong>Master of Science in Computer Engineering</strong>, San José State University, GPA: 4.00/4.00
+                <li><strong>Master of Science in Computer Engineering</strong>, San José State University, GPA:
+                    4.00/4.00
                     <br> Specialization in Data Science: Machine Learning, Data Mining, Data Analytics, Deep Learning
                     <br> Aug 2022 – May 2024
-                    <br> Relevant courses: Big Data Algorithms, Data Structures, Operating Systems, Software Security, Software Design
+                    <br> Relevant courses: Big Data Algorithms, Data Structures, Operating Systems, Software Security,
+                    Software Design
                 </li>
                 <li><strong>Bachelor of Technology in Computer Engineering</strong>, PES University, GPA: 3.86/4.00
                     <br> Aug 2018 – May 2022
-                    <br> Courses: Computer Architecture, Artificial Intelligence, Data Science, Database Management Systems, Computer Networks
+                    <br> Courses: Computer Architecture, Artificial Intelligence, Data Science, Database Management
+                    Systems, Computer Networks
                 </li>
             </ul>
         </div>
 
-      <div class="section">
-    <h2>Skills</h2>
-    <table class="table table-borderless">
-        <tbody>
-            <tr>
-                <th scope="row">Programming</th>
-                <td>Python, Shell scripting, R, C, C++, Java, JavaScript, TypeScript, JQuery, HTML, MySQL, PHP, MATLAB, CSS3</td>
-            </tr>
-            <tr>
-                <th scope="row">AI and Data Science</th>
-                <td>NumPy, Scikit-learn, Pandas, PyTorch, TensorFlow, Keras, Matplotlib, SciPy, AWS</td>
-            </tr>
-            <tr>
-                <th scope="row">Software Engineering</th>
-                <td>JIRA, Slack, Confluence, Trello, Github, BitBucket, Agile best practices</td>
-            </tr>
-            <tr>
-                <th scope="row">Tools and Technologies</th>
-                <td>Django, ReactJS, MySQL, Apache Spark, Git, Docker, Alteryx, Tableau, Microsoft Power BI, HPC</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+        <div class="section">
+            <h2>Skills</h2>
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th scope="row">Programming</th>
+                        <td>Python, Shell scripting, R, C, C++, Java, JavaScript, TypeScript, JQuery, HTML, MySQL, PHP,
+                            MATLAB, CSS3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">AI and Data Science</th>
+                        <td>NumPy, Scikit-learn, Pandas, PyTorch, TensorFlow, Keras, Matplotlib, SciPy, AWS</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Software Engineering</th>
+                        <td>JIRA, Slack, Confluence, Trello, Github, BitBucket, Agile best practices</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tools and Technologies</th>
+                        <td>Django, ReactJS, MySQL, Apache Spark, Git, Docker, Alteryx, Tableau, Microsoft Power BI, HPC
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-<div class="section">
-    <h2>Experience</h2>
-    <div class="experience-entry">
-        <h3>Trane Technologies | Controls Software Engineer | United States</h3>
-        <span class="date">Jan 2024 – Present</span>
-        <ul>
-            <li>Engineered real-time embedded controls for HVAC systems using C++, integrating these solutions into enterprise automation frameworks, and applied UML and OOP principles to create robust, scalable software solutions.</li>
-            <li>Implemented communication protocols (XML, TCP/IP, MODBUS, BACnet, LonTalk) and optimized LLMs, including GPT models, to enhance internal chatbot functionalities and ensure seamless system interoperability.</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>Experience</h2>
+            <div class="table table-borderless">
+                <h3>Trane Technologies | Controls Software Engineer | United States</h3>
+                <span class="date">Jan 2024 – Present</span>
+                <ul>
+                    <li>Engineered real-time embedded controls for HVAC systems using C++, integrating these solutions
+                        into enterprise automation frameworks, and applied UML and OOP principles to create robust,
+                        scalable software solutions.</li>
+                    <li>Implemented communication protocols (XML, TCP/IP, MODBUS, BACnet, LonTalk) and optimized LLMs,
+                        including GPT models, to enhance internal chatbot functionalities and ensure seamless system
+                        interoperability.</li>
+                </ul>
+            </div>
 
-    <div class="experience-entry">
-        <h3>Juniper Networks | Software Engineering Intern | Sunnyvale, CA</h3>
-        <span class="date">May 2023 – Dec 2023</span>
-        <ul>
-            <li>Implemented power management and security mechanisms to optimize network performance and enhance data security.</li>
-            <li>Conducted benchmarking tests to compare the performance of Ethernet vs. RDMA over Converged Ethernet (RoCEv2) in supporting deep learning frameworks like TensorFlow, documenting significant improvements in data transfer efficiency.</li>
-            <li>Collaborated with network engineers to fine-tune the lab management tool for optimal network performance, adhering to industry best practices. Technologies used: Python, Django, REST API, MySQL, Ansible.</li>
-        </ul>
-    </div>
+            <div class="table table-borderless">
+                <h3>Juniper Networks | Software Engineering Intern | Sunnyvale, CA</h3>
+                <span class="date">May 2023 – Dec 2023</span>
+                <ul>
+                    <li>Implemented power management and security mechanisms to optimize network performance and enhance
+                        data security.</li>
+                    <li>Conducted benchmarking tests to compare the performance of Ethernet vs. RDMA over Converged
+                        Ethernet (RoCEv2) in supporting deep learning frameworks like TensorFlow, documenting
+                        significant improvements in data transfer efficiency.</li>
+                    <li>Collaborated with network engineers to fine-tune the lab management tool for optimal network
+                        performance, adhering to industry best practices. Technologies used: Python, Django, REST API,
+                        MySQL, Ansible.</li>
+                </ul>
+            </div>
 
-    <div class="experience-entry">
-        <h3>Publicis Sapient | Full Stack Development Intern | Bangalore</h3>
-        <span class="date">Jan 2022 – July 2022</span>
-        <ul>
-            <li>Created an e-commerce website for daily groceries on React using JSX, Bootstrap, JavaScript, and React.js.</li>
-            <li>Leveraged AWS services such as Amazon S3 for scalable and reliable storage, Amazon EC2 for hosting the backend server, and Amazon RDS for managing the relational database, optimizing the e-commerce website’s performance and scalability.</li>
-        </ul>
-    </div>
+            <div class="table table-borderless">
+                <h3>Publicis Sapient | Full Stack Development Intern | Bangalore</h3>
+                <span class="date">Jan 2022 – July 2022</span>
+                <ul>
+                    <li>Created an e-commerce website for daily groceries on React using JSX, Bootstrap, JavaScript, and
+                        React.js.</li>
+                    <li>Leveraged AWS services such as Amazon S3 for scalable and reliable storage, Amazon EC2 for
+                        hosting the backend server, and Amazon RDS for managing the relational database, optimizing the
+                        e-commerce website’s performance and scalability.</li>
+                </ul>
+            </div>
 
-    <div class="experience-entry">
-        <h3>Mercedes Benz Research and Development | Software Engineering Intern, Computer Vision | Bangalore</h3>
-        <span class="date">Aug 2021 – Mar 2022</span>
-        <ul>
-            <li>Developed a robust image annotation platform used by 150 annotators using Python-Django, JavaScript, and MySQL.</li>
-            <li>Evaluated Machine Learning models for gesture detection, object and scene detection for autonomous cars.</li>
-            <li>Demonstrated expertise in computer vision techniques, including Canny edge detection, SLIC, Flood fill, HRNet, MTCNN, ResNets.</li>
-        </ul>
-    </div>
+            <div class="table table-borderless">
+                <h3>Mercedes Benz Research and Development | Software Engineering Intern, Computer Vision | Bangalore
+                </h3>
+                <span class="date">Aug 2021 – Mar 2022</span>
+                <ul>
+                    <li>Developed a robust image annotation platform used by 150 annotators using Python-Django,
+                        JavaScript, and MySQL.</li>
+                    <li>Evaluated Machine Learning models for gesture detection, object and scene detection for
+                        autonomous cars.</li>
+                    <li>Demonstrated expertise in computer vision techniques, including Canny edge detection, SLIC,
+                        Flood fill, HRNet, MTCNN, ResNets.</li>
+                </ul>
+            </div>
 
-    <div class="experience-entry">
-        <h3>Indian Institute of Science | Research and Development Intern | Bangalore (GitHub/Ruthu)</h3>
-        <span class="date">Mar 2021 – Aug 2021</span>
-        <ul>
-            <li>Integrated an Epidemic Simulation Platform using Object-Oriented Programming in Python. Technologies: Streamlit, OOP, Graph Neural Networks for Contact Tracing, Epidemiological Data Mining, AI for Public Health Analytics.</li>
-            <li>Galvanized a team of 5 to put forward our hypothesis at RxCovea which is a board of 100 members from different countries representing broad swath of disciplines with respect to technology.</li>
-        </ul>
-    </div>
-</div>
+            <div class="table table-borderless">
+                <h3>Indian Institute of Science | Research and Development Intern | Bangalore (GitHub/Ruthu)</h3>
+                <span class="date">Mar 2021 – Aug 2021</span>
+                <ul>
+                    <li>Integrated an Epidemic Simulation Platform using Object-Oriented Programming in Python.
+                        Technologies: Streamlit, OOP, Graph Neural Networks for Contact Tracing, Epidemiological Data
+                        Mining, AI for Public Health Analytics.</li>
+                    <li>Galvanized a team of 5 to put forward our hypothesis at RxCovea which is a board of 100 members
+                        from different countries representing broad swath of disciplines with respect to technology.
+                    </li>
+                </ul>
+            </div>
+        </div>
 
 
         <div class="section">
             <h2>Academic Projects</h2>
-            <ul class="list-unstyled">
-                <li><strong>Image and Video Super-Resolution in Real Time</strong>
-                    <br> Led a research project on video super-resolution using ESPCNs and GANs, utilizing Adaptive bitrate algorithms.
-                </li>
-                <li><strong>Epileptic Seizure Detection using Deep Learning</strong>
-                    <br> Engineered an LSTM+SVM model with a 90% accuracy rate for detecting epileptic seizures.
-                </li>
-            </ul>
-        </div>
+            <div class="project-entry">
+                <h3><a href="https://github.com/ruthushankar/realTimeVideoSuperResolution" target="_blank">Image and Video Super-Resolution in Real Time</a></h3>
+                <ul>
+                    <li>Led a research project on video super-resolution using ESPCNs and GANs, utilizing Adaptive bitrate algorithms.</li>
+                </ul>
+            </div>
+            <div class="project-entry">
+                <h3><a href="https://github.com/ruthushankar/Epileptic-seizure-detection" target="_blank">Epileptic Seizure Detection using Deep Learning</a></h3>
+                <ul>
+                    <li>Engineered an LSTM+SVM model with a 90% accuracy rate for detecting epileptic seizures.</li>
+                </ul>
+            </div>
+            <div class="project-entry">
+                <h3><a href="https://github.com/healthbadge/episimmer" target="_blank">Indian Institute of Science | Research and Development Intern | Bangalore (GitHub/Ruthu)</a></h3>
 
-        <div class="section">
-            <h2>Research Paper</h2>
-            <p>Proposed a novel approach explaining the co-relation between ambient temperature and rainfall patterns using RNNs achieving an accuracy of 85%. Presented the paper, “An inch closer to understanding Bengaluru’s weather,” at the International Conference on Advances in Electrical and Computer Technologies.</p>
+                <ul>
+                    <li>Integrated an Epidemic Simulation Platform using Object-Oriented Programming in Python. Technologies: Streamlit, OOP, Graph Neural Networks for Contact Tracing, Epidemiological Data Mining, AI for Public Health Analytics.</li>
+                   
+                </ul>
+            </div>
         </div>
-    </div>
+        
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
