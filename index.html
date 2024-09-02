@@ -9,66 +9,54 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f9f9f9;
+         
+            background-color: #dcdcdc;
         }
-
+        
         .header {
-            background: #333;
-            /* Darker background for a sophisticated look */
+            position: relative; /* Ensure the overlay is positioned correctly */
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('KingLibrary-Linkedin-Cover.jpg') no-repeat center center;
+            background-size: cover;
             color: #fff;
-            /* White color for text */
             padding: 20px;
-            /* Slightly reduced padding for a cleaner look */
             border-radius: 8px;
-            /* Slightly smaller border-radius for sharper corners */
             text-align: center;
             font-family: 'Playfair Display', serif;
-            /* Maintain the serif font for elegance */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            /* Subtle shadow for a light floating effect */
             letter-spacing: 0.5px;
-            /* Slightly reduced letter spacing for text */
         }
-
+        
+      
+       
         .header h1 {
             margin: 0;
             font-size: 2.2em;
-            /* Slightly smaller font size for the title */
             font-weight: 600;
-            /* Semi-bold font weight for a balanced emphasis */
             text-transform: uppercase;
-            /* Maintain uppercase for formality */
+            color: #f8f5f5;
+            
         }
-
+        
         .header p {
             margin: 8px 0 0;
-            /* Reduced margin for tighter spacing */
             font-size: 1.1em;
-            /* Slightly smaller font size for the location */
-            font-weight: 300;
-            /* Lighter font weight for contrast with the title */
-            color: #ccc;
-            /* Softer color for secondary text */
+            font-weight: 600;
+            color: #f8f5f5;
         }
-
+        
         .header .links a {
-            color: #f5a623;
-            /* Soft orange color for the links */
+            color: #f8f5f5;
             text-decoration: none;
             margin: 0 10px;
-            font-weight: 400;
-            /* Regular font weight for link text */
+            font-weight: 600;
             transition: color 0.3s ease;
-            /* Smooth transition for hover effect */
         }
-
+        
         .header .links a:hover {
             color: #ffd700;
-            /* Golden color on hover for an elegant interaction */
             text-decoration: underline;
-            /* Underline on hover to emphasize links */
         }
-
+        
         .section {
             background: #fff;
             padding: 20px;
@@ -76,33 +64,22 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
+        
         .section h2 {
             font-family: 'Playfair Display', serif;
-            /* Use a serif font for a classy look */
             border-bottom: 2px solid;
             border-image: linear-gradient(to right, #007BFF, #00C6FF);
-            /* Gradient border */
             border-image-slice: 1;
             padding-bottom: 15px;
-            /* Increased padding for more spacing */
             margin-bottom: 25px;
-            /* Increased margin for more whitespace */
             color: #333;
-            /* Darker color for a sophisticated look */
             text-transform: uppercase;
-            /* Makes the text uppercase for emphasis */
             letter-spacing: 2px;
-            /* Spacing between letters for elegance */
             font-weight: bold;
-            /* Bold font for strong emphasis */
             text-align: left;
-            /* Align the text to the left */
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-            /* Soft shadow for a subtle depth effect */
         }
-
-
+        
         .skills .skill {
             background: #e9ecef;
             border-radius: 5px;
@@ -110,39 +87,14 @@
             font-size: 0.9em;
             margin: 5px;
         }
-
+        
         @media (max-width: 768px) {
             .skills .skill {
                 flex: 1 1 100%;
                 margin: 5px 0;
             }
         }
-
-        .section h2 {
-            font-family: 'Playfair Display', serif;
-            /* Use a serif font for a classy look */
-            border-bottom: 2px solid;
-            border-image: linear-gradient(to right, #007BFF, #00C6FF);
-            /* Gradient border */
-            border-image-slice: 1;
-            padding-bottom: 15px;
-            /* Increased padding for more spacing */
-            margin-bottom: 25px;
-            /* Increased margin for more whitespace */
-            color: #333;
-            /* Darker color for a sophisticated look */
-            text-transform: uppercase;
-            /* Makes the text uppercase for emphasis */
-            letter-spacing: 2px;
-            /* Spacing between letters for elegance */
-            font-weight: bold;
-            /* Bold font for strong emphasis */
-            text-align: left;
-            /* Align the text to the left */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-            /* Soft shadow for a subtle depth effect */
-        }
-
+        
         .experience-entry,
         .project-entry {
             margin-bottom: 20px;
@@ -150,43 +102,39 @@
             transition: all 0.3s ease;
             border-radius: 5px;
         }
-
+        
         .experience-entry:hover,
         .project-entry:hover {
             background-color: #f0f8ff;
-            /* Light background color on hover */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            /* Adds a subtle shadow on hover */
             transform: scale(1.02);
-            /* Slightly enlarges the entry on hover */
         }
-
-
-
+        
         .experience-entry h3,
         .project-entry h3 {
             font-size: 1.2em;
             font-weight: bold;
             margin-bottom: 5px;
         }
-
+        
         .experience-entry .date,
         .project-entry .date {
             float: right;
             font-weight: bold;
             color: #555;
         }
-
+        
         .experience-entry ul,
         .project-entry ul {
             margin-top: 10px;
             padding-left: 20px;
         }
-
+        
         .experience-entry ul li,
         .project-entry ul li {
             margin-bottom: 10px;
         }
+        
     </style>
 </head>
 
